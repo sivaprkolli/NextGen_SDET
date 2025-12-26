@@ -42,6 +42,14 @@ public class PAgent {
 
     }
 
+    public void clickOnElement(String a){
+
+    }
+
+    public void clickOnElement(String a, int time){
+
+    }
+
     public static void main(String[] args) {
         PAgent pAgent = new PAgent();
         pAgent.register("Java", "Selenium", 124);
