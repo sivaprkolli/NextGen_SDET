@@ -1,6 +1,6 @@
 package com.sdet.oops.abstraction;
 
-import com.sdet.returnTypes.WebDriver;
+import com.sdet.returnTypes.WebDriverTest;
 
 public class SampleTest {
 

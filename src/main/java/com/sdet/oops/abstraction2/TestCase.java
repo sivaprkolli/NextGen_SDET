@@ -3,22 +3,22 @@ package com.sdet.oops.abstraction2;
 public class TestCase {
 
     public static void main(String[] args) {
-        ChromeDriver chromeDriver = new ChromeDriver();
+        ChromeDriverTest chromeDriver = new ChromeDriverTest();
         chromeDriver.getNetwork();
         chromeDriver.getAttribute();
         chromeDriver.click();
 
-        RemoteWebDriver remoteWebDriver = new ChromeDriver();
+        RemoteWebDriverTest remoteWebDriver = new ChromeDriverTest();
         remoteWebDriver.click();
 
-        WebDriver driver = new ChromeDriver();
+        WebDriverTest driver = new ChromeDriverTest();
         driver.sendKeys("Test");
 
-        WebDriver driver1 = new EdgeDriver();
+        WebDriverTest driver1 = new EdgeDriverTest();
         driver1.click();
 
-        WebDriver driver2 = new EdgeDriver();
-        ((EdgeDriver) driver2).getLatency();
+        WebDriverTest driver2 = new EdgeDriverTest();
+        ((EdgeDriverTest) driver2).getLatency();
         driver2.click();
 
 

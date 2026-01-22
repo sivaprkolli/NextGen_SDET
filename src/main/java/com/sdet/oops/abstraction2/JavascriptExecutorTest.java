@@ -1,5 +1,5 @@
 package com.sdet.oops.abstraction2;
 
-public interface JavascriptExecutor {
+public interface JavascriptExecutorTest {
     void execute();
 }

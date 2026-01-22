@@ -1,6 +1,6 @@
 package com.sdet.oops.abstraction;
 
-public interface WebDriver {
+public interface WebDriverTest {
 
     void click();
 

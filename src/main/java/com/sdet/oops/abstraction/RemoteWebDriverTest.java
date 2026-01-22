@@ -1,6 +1,6 @@
 package com.sdet.oops.abstraction;
 
-public class RemoteWebDriver implements WebDriver{
+public class RemoteWebDriverTest implements WebDriverTest {
 
     @Override
     public void click() {
