@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="TestNG Demo">
+    <parameter name="username" value="dbuser"/>
+    <parameter name="password" value="test123"/>
+    <test name="smoke">
+        <parameter name="url" value="https://www.saucedemo.com/" />
+        <classes>
+            <class name="com.sdet.testNGFeatures.DataDrivenTest"/>
+        </classes>
+        
+    </test>
+    
+</suite>
