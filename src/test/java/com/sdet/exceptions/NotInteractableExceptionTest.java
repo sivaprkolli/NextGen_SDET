@@ -1,6 +1,7 @@
 package com.sdet.exceptions;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -15,13 +16,21 @@ public class NotInteractableExceptionTest {
     @Test
     public void notInteractableExceptionTest() throws InterruptedException {
         driver = new ChromeDriver();
-        driver.get("https://www.salesforce.com/in/form/signup/sales-ee/?d=70130000000Enyk");
+        driver.get("https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=57");
 
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        Thread.sleep(10000);
-        WebElement firstNameInputBox = driver.findElement(By.xpath("//a[normalize-space()='Terms of Service']"));
-        firstNameInputBox.click();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+        WebElement firstNameInputBox = driver.findElement(By.xpath("(//label[text()='Pre-Order'])[2]/preceding-sibling::input"));
+        //firstNameInputBox.click();
+
+        JavascriptExecutor js  = (JavascriptExecutor) driver;
+        String argument = "arguments[0].click()";
+        String argument2 = "arguments[0].scrollIntoView(true)";
+        js.executeScript(argument2, firstNameInputBox);
+      //  js.executeScript("window.scrollBy(0,150)", firstNameInputBox);
+        js.executeScript(argument,  firstNameInputBox);
+
+        System.out.println();
     }
 
     @AfterClass
