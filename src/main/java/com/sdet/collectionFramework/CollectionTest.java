@@ -2,7 +2,7 @@ package com.sdet.collectionFramework;
 
 import java.util.*;
 
-public class CollectionTest {
+public class CollectionTest extends Object{
 
     public static void main(String[] args) {
             Collection collection = new ArrayList();
