@@ -11,6 +11,12 @@ public class CollectionTest extends Object{
             collection.add(true);
             collection.add(4.40);
 
+            for (Object obj: collection){
+                System.out.println(obj);
+            }
+
+        System.out.println("*********************************************");
+
         System.out.println(collection);
 
         List<String> list = new ArrayList<String>();
