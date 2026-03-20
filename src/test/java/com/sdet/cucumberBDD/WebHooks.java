@@ -1,4 +1,4 @@
-package com.sdet.CucumberBDD;
+package com.sdet.cucumberBDD;
 
 import io.cucumber.java.Before;
 import io.cucumber.java.BeforeAll;

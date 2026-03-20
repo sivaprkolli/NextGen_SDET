@@ -1,4 +1,4 @@
-package com.sdet.CucumberBDD;
+package com.sdet.cucumberBDD;
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
@@ -6,7 +6,7 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
         features = "src/test/resources/webFeatures",
-        glue = {"com/sdet/CucumberBDD", "com/sdet/CucumberBDD/WebHooks"},
+        glue = {"com/sdet/cucumberBDD", "com/sdet/cucumberBDD/WebHooks"},
         plugin = "pretty",
         tags = "@LT5"
 

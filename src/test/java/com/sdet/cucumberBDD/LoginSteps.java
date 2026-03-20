@@ -1,7 +1,6 @@
-package com.sdet.CucumberBDD;
+package com.sdet.cucumberBDD;
 
 import io.cucumber.datatable.DataTable;
-import io.cucumber.java.PendingException;
 import io.cucumber.java.en.*;
 
 import java.util.List;
